@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.mydairy.MainActivity">
+    <ListView
+        android:id="@+id/lv_show"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+    <FrameLayout
+        android:layout_weight="9"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/bt_add"
+            android:layout_gravity="center"
+            android:background="@drawable/add_dairy"
+            android:layout_width="51dp"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+</LinearLayout>

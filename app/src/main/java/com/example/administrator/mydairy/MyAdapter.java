@@ -44,11 +44,11 @@ public class MyAdapter extends BaseAdapter {
         if (view == null) {
             viewHolder = new ViewHolder();
             view = layoutInflater.inflate(R.layout.listview_item, null);
+            viewHolder.textView1 = (TextView)view.findViewById(R.id.tv_content);
             viewHolder.textView = (TextView) view.findViewById(R.id.tv_title);
             view.setTag(viewHolder);
         }else {
             viewHolder = (ViewHolder)view.getTag();
-            viewHolder.textView1 = (TextView) view.findViewById(R.id.tv_content);
             viewHolder.textView.setText(mList.get(count).getTitle());
             viewHolder.textView1.setText(mList.get(count).getContent());
         }
